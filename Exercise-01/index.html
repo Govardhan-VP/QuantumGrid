@@ -1,0 +1,60 @@
+<!-- Objective: Build a simple hamburger menu that toggles a 
+navigation menu on and off when clicked.
+
+Instructions:
+HTML Structure:
+
+Create a basic HTML file.
+Add a div element for the hamburger menu icon with a class of hamburger.
+Add a nav element for the navigation menu with a class of menu.
+CSS Styling:
+
+Style the hamburger class to look like a hamburger icon
+ (e.g., three horizontal lines).
+Style the menu class to be hidden by default.
+Create styles to show the menu when the menu class has an 
+additional class (e.g., active).
+JavaScript:
+
+Write a JavaScript function to toggle the active class on the menu 
+when the hamburger is clicked. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <div class="flex-container">
+            <div class="logo">
+                <h3> Govardhan</h3>
+            </div>
+            <nav class="navbar">
+
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a href="" class="nav-links">Home</a></li>
+                    <li class="nav-list-item"><a href="" class="nav-links">About</a></li>
+                    <li class="nav-list-item"><a href="" class="nav-links">Contact</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="hamburger">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+
+</html>
