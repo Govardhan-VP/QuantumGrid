@@ -1,0 +1,136 @@
+<!-- Build a Survey Form using HTML and CSS
+
+Forms are an essential part of any project used to collect user input. In this article, we will create a survey form
+using HTML and CSS.
+The form will include various questions for users to answer.
+We will use HTML to design the basic layout of the form, and CSS to enhance the design with elements such as text
+decoration,
+text color, background color, text alignment, margin, padding, and more.
+
+Prerequisite
+HTML
+CSS
+Approach
+The <form> element is used to create an HTML form for user input.
+    Inside the form element, provide different options to the user like name, email, age, etc.
+    In HTML, we have different input elements for different tasks.
+    So, we are providing respective input types according to the question (email for taking email input,
+    text-area for taking a large message, name for taking name input, etc.).
+    We have also used the radio-button (let a user selection of the provided choices.),
+    check-button (let a user select zero or more options of the provided choices), and
+    submit-button (the button for submitting the form data to a form-handler). -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+
+        <h1>Basic Survey Form</h1>
+
+
+
+        <form action="#">
+
+            <!-- Full section -->
+
+            <div class="form-control">
+                <label for="#">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Full Name">
+            </div>
+
+            <!-- Email section -->
+
+            <div class="form-control">
+                <Label>Email</Label>
+                <input type="email" name="email" id="email-id" placeholder="Enter your Email id">
+            </div>
+
+            <!-- Age section -->
+
+            <div class="form-control">
+                <label for="">Age</label>
+                <input type="text" name="age" id="age" placeholder="Enter your age">
+            </div>
+
+            <!-- Option section -->
+
+            <div class="form-control">
+                <label for="role">Which option best describe you?</label>
+                <select name="role" id="role">
+                    <option value="others">others</option>
+                    <option value="student">student</option>
+                    <option value="intern">intern</option>
+                    <option value="professional">professional</option>
+
+                </select>
+            </div>
+
+            <!-- Radio section -->
+
+            <div class="form-control">
+                <label for="">would you links to recommend my website to a friend?</label>
+                <label for="recomd-1"><input type="radio" name="recomd-1" id="recomd-1">Yes</label>
+                <label for="recomd-2"><input type="radio" name="recomd-2" id="recomd-2">No</label>
+                <label for="recomd-3"><input type="radio" name="recomd-3" id="recomd-3">May be</label>
+            </div>
+
+            <!-- checkbox section -->
+
+            <div class="form-control">
+                <label for="">Languages and framework known</label>
+                <label for="inp-1">
+                    <input type="checkbox" name="inp-1" id="inp-1">C
+                </label>
+                <label for="inp-2">
+                    <input type="checkbox" name="inp-2" id="inp-2">C++
+                </label>
+                <label for="inp-3">
+                    <input type="checkbox" name="inp-3" id="inp-3">C#
+                </label>
+                <label for="inp-4">
+                    <input type="checkbox" name="inp-4" id="inp-4">Java
+                </label>
+                <label for="inp-5">
+                    <input type="checkbox" name="inp-5" id="inp-5">Python
+                </label>
+                <label for="inp-6">
+                    <input type="checkbox" name="inp-6" id="inp-6">Javascript
+                </label>
+                <label for="inp-7">
+                    <input type="checkbox" name="inp-7" id="inp-7">React
+                </label>
+                <label for="inp-8">
+                    <input type="checkbox" name="inp-8" id="inp-8">Angular
+                </label>
+                <label for="inp-9">
+                    <input type="checkbox" name="inp-9" id="inp-9">Django
+                </label>
+                <label for="inp-10">
+                    <input type="checkbox" name="inp-10" id="inp-10">Spring
+                </label>
+            </div>
+
+            <!-- comments section -->
+
+            <div class="form-control">
+                <label for="comments">Any comments or suggestions</label>
+                <textarea name="comments" id="comments">Enter comments here</textarea>
+            </div>
+
+            <!-- Submit button section -->
+
+            <button type="submit" class="btn-grp" id="btn-grp">
+                Submit
+            </button>
+        </form>
+
+    </body>
+
+</html>
