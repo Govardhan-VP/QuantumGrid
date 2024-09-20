@@ -1,0 +1,48 @@
+<!-- 5. Images
+
+
+Add different images to a webpage:
+Display an image using the <img> tag, setting the source (src) 
+and alternative text (alt).
+Add an image gallery using multiple <img> tags
+ with appropriate alt descriptions.
+Add an image with a caption using the <figure> and <figcaption> tags.
+Bonus:
+
+Add a favicon (small icon) to your webpage by using a <link> 
+tag in the <head> section.
+Add an image with the srcset attribute to load different 
+image sizes based on screen resolution. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+        <title>Image tags</title>
+    </head>
+
+    <body>
+        <div class="conatiner">
+            <img src="./image.jfif" alt="sample image-1">
+            <img src="./name1.png" alt="sample image-2">
+            <img src="./name4.png" alt="sample image-3">
+            <img src="./image.jfif" alt="sample image-4">
+            <img src="./name1.png" alt="sample image-5">
+            <img src="./name4.png" alt="sample image-6">
+            <img src="./image.jfif" alt="sample image-7">
+            <img src="./name1.png" alt="sample image-8">
+            <img src="./name4.png" alt="sample image-9">
+        </div>
+
+        <figure>
+            <img src="./image.jfif" alt="sample image-1">
+            <figcaption>sample image-1</figcaption>
+        </figure>
+
+        <img src="./name4.png" alt="sample image 2" srcset="100px 200px 300px">
+    </body>
+
+</html>

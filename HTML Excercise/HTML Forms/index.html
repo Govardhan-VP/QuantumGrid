@@ -1,0 +1,54 @@
+<!-- 7. Forms
+
+
+Create a registration form with:
+Text inputs for "First Name", 
+"Last Name", and "Email Address".
+A password input.
+Radio buttons for selecting gender.
+A set of checkboxes for different interests.
+A submit button.
+Bonus:
+
+Add a reset button to clear the form.
+Make the email input field required by adding 
+the required attribute. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+
+    <body>
+        <form action="POST">
+            <label for="">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter first name">
+            <br>
+            <label for="">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter last name">
+            <br>
+            <label for="">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter email address" required>
+            <br>
+            <label for="">password</label>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter the password">
+            <br>
+            <label for="">Gender</label>
+            <input type="radio" name="Male" id="male">Male
+            <input type="radio" name="Female" id="female">Female
+            <input type="radio" name="transgender" id="transgender">transgender
+            <br>
+            <label for="Cricket">Hobbies</label>
+            <input type="checkbox" name="Cricket" id="Cricket">Cricket
+            <br>
+            <input type="reset" value="Reset">
+            <input type="button" value="Submit">
+        </form>
+    </body>
+
+</html>
