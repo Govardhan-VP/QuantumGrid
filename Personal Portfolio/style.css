@@ -83,6 +83,83 @@ body {
 
 }
 
+
+main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    height: 90vh;
+    padding: 5rem 12%;
+    scroll-snap-align: start;
+
+}
+
+/* ==================================Home section=============================== */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.home-content h2 {
+    font-size: 2.1rem;
+    text-transform: capitalize;
+}
+
+.home-content h3 {
+    font-family: 2rem;
+    text-transform: capitalize;
+}
+
+.home-content p {
+    font-size: 1.3rem;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.social-links a {
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    color: red;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin: 2rem 0.5rem;
+    padding: 0.4rem;
+    background: transparent;
+}
+
+.btn-grp button {
+    width: 400px;
+    height: 6vh;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--button-color);
+    color: azure;
+    font-size: 1.5rem;
+}
+
+.home-image img {
+    width: 55vh;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--extra-color);
+    transition: 0.4s ease-in-out;
+}
+
+
 @media(max-width:600px) {
     .logo {
         padding: 10px;
