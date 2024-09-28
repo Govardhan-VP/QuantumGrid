@@ -159,6 +159,32 @@ section {
     transition: 0.4s ease-in-out;
 }
 
+/* ==================================About section=============================== */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about-image img {
+    width: 55vh;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--accent-color);
+    transition: 0.4s ease-in-out;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 2.1rem;
+    text-transform: capitalize;
+}
 
 @media(max-width:600px) {
     .logo {
