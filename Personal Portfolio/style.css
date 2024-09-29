@@ -391,6 +391,56 @@ h1 {
     right: 10px;
 }
 
+
+/* ==================================contact section=============================== */
+.contact {
+    padding: 20px;
+    top: 0;
+    background-color: lightpink;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+
+.contact form .input-group-1,
+.contact form textarea {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--button-color);
+    background-color: black;
+    border-radius: 2rem;
+    border: 2px solid var(--button-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.button-grp {
+    width: 400px;
+    height: 6vh;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--button-color);
+    color: azure;
+    font-size: 1.5rem;
+}
+
 @media(max-width:600px) {
     .logo {
         padding: 10px;
