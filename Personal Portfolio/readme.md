@@ -29,38 +29,3 @@
 
 
 
-Top-Trekx-Im-gvp-98 -new github user name
-
-WebSculptor-Govardhan-26- another github user name
-
-want node connector images
-
-
-color:
-
-#FF7700 - flushorange - combine yellow & red
-
-
-#ff8c00- combine orange,red,yellow -- saffron
-
-
-style
-
-   /* =====================================Background Colors============================ */
-      /* ==================================Text Colors=============================== */
-	     /* ====================================Highlight colors============================= */
-		 /* ==============================Extra colors=================================== */
-		 /* ==================================header section=============================== */
-		 
-		 /* ==================================Nav section=============================== */
-		 /* ==================================Nav inside image logo section=============================== */
-		 
-		 /* ================= Home section================= */
-		 
-		 
-		 
-		 html
-		 
-		  <!-- =================header section===================== -->
-		  <!-- =================Navigation section================= -->
-		   <!-- ================= Home section================= -->
