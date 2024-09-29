@@ -1,3 +1,6 @@
+/* ==================================Navigation section=============================== */
+
+
 const Menu = document.getElementById("menuList");
 const hamburger = document.getElementById("hamburger");
 const icon = document.querySelector("i");
@@ -14,3 +17,26 @@ function toggleMenu() {
         icon.classList.add("fa-bars");
     }
 }
+
+
+/* ==================================Project section=============================== */
+
+const slider = document.getElementById('slider');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+const cardWidth = 300 + 20; // card width + gap
+
+prev.addEventListener('click', () => {
+    slider.scrollBy({
+        left: -cardWidth,
+        behavior: 'smooth'
+    });
+});
+
+next.addEventListener('click', () => {
+    slider.scrollBy({
+        left: cardWidth,
+        behavior: 'smooth'
+    });
+});
