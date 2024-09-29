@@ -58,6 +58,7 @@ body {
 .nav-list {
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 .nav-list-item {
@@ -70,6 +71,7 @@ body {
     font-size: 1.4rem;
     line-height: 70px;
     font-weight: 500;
+    color: var(--secondary-color);
 }
 
 .menu-icon {
@@ -83,25 +85,25 @@ body {
 
 }
 
-
 main {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    max-height: 90vh;
 }
 
 section {
-    height: 90vh;
     padding: 5rem 12%;
     scroll-snap-align: start;
 
 }
 
-/* ==================================Home section=============================== */
 .home {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    background-color: lightskyblue;
+
 }
 
 .home-content {
@@ -132,6 +134,8 @@ section {
     display: inline-flex;
     justify-content: center;
     color: red;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     border: 2px solid red;
     margin: 2rem 0.5rem;
@@ -159,12 +163,12 @@ section {
     transition: 0.4s ease-in-out;
 }
 
-/* ==================================About section=============================== */
 .about {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    background-color: lightgreen;
 }
 
 .about-image img {
@@ -216,5 +220,76 @@ section {
 
     #menuList {
         transition: all 0.3s;
+    }
+
+    section {
+        padding: 2rem 5%;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        gap: 0.9rem
+    }
+
+    .home-image img {
+
+        width: 32vh;
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .home-content p {
+        font-size: 0.9rem;
+        padding: 2rem;
+    }
+
+    .social-links a {
+        margin: 0.5rem 0.25rem;
+        padding: 0.4rem;
+
+    }
+
+    .btn-grp button {
+        width: 250px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image img {
+
+        width: 32vh;
+    }
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1.2rem;
+        padding: 2rem;
     }
 }
