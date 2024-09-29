@@ -190,6 +190,101 @@ section {
     text-transform: capitalize;
 }
 
+
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-area {
+    flex: 1;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px grey;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightcyan;
+}
+
+.skill {
+    position: relative;
+    padding: 10px;
+}
+
+.skill-title {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    height: 20px;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: lightslategray;
+}
+
+.skill-fill {
+    position: absolute;
+    border-radius: 5px 0 0 5px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 5px;
+    color: darkred;
+    font-size: 0.9rem;
+
+}
+
+.skill-percent {
+    position: relative;
+    color: black;
+    z-index: 1;
+}
+
+.html {
+    background-color: lightgreen;
+    width: 65%;
+    animation: html 0.3s ease-in-out;
+}
+
+.css {
+    background-color: lightpink;
+    width: 75%;
+    animation: css 0.3s ease-in-out;
+}
+
+@keyframes html {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 65%;
+    }
+}
+
+@keyframes css {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 75%;
+    }
+}
+
+
 @media(max-width:600px) {
     .logo {
         padding: 10px;
