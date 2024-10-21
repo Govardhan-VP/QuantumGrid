@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Projects</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- Filter Buttons -->
+        <section class="project-filters">
+            <button class="filter-btn active" data-type="all">All</button>
+            <button class="filter-btn" data-type="web">Web Development</button>
+            <button class="filter-btn" data-type="crm">Dynamics CRM</button>
+            <button class="filter-btn" data-type="js">JavaScript Apps</button>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <!-- Featured Project -->
+            <div class="project-card" data-type="web" data-featured="true">
+                <div class="featured-tag">Featured</div>
+                <img src="./Personal-portfolio.jpg" alt=" Web Project 1" />
+                <h3>Web Project 1</h3>
+                <p>A brief description of the web development project.</p>
+                <a href="project1-details.html" class="btn">View More</a>
+            </div>
+
+            <!-- Non-Featured Project -->
+            <div class="project-card" data-type="crm">
+                <img src="./Personal-portfolio.jpg" alt="CRM Project 1" />
+                <h3>CRM Project 1</h3>
+                <p>A brief description of the CRM project.</p>
+                <a href="project2-details.html" class="btn">View More</a>
+            </div>
+
+            <!-- JavaScript Project -->
+            <div class="project-card" data-type="js">
+                <img src="./Personal-portfolio.jpg" alt="JavaScript Project 1" />
+                <h3>JavaScript Project 1</h3>
+                <p>A brief description of the JavaScript project.</p>
+                <a href="project3-details.html" class="btn">View More</a>
+            </div>
+
+            <!-- Additional Projects... -->
+        </section>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

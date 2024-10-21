@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Filter Buttons */
+.project-filters {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Project Cards */
+.project-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.project-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-card a.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a.btn:hover {
+    background-color: #218838;
+}
+
+/* Featured Tag */
+.featured-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff5722;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Highlight Featured Projects */
+.project-card[data-featured="true"] {
+    border: 2px solid #ff5722;
+    box-shadow: 0 8px 16px rgba(255, 87, 34, 0.2);
+}
+
+/* Hidden Projects (for filtering) */
+.project-card.hidden {
+    display: none;
+}
+
+/* General Hover Effect: Card Lift  */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Add a stronger shadow */
+}
+
+
+/* Hover Effect: Image Zoom */
+.project-card img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+    /* Zoom in the image */
+    opacity: 0.9;
+    /* Slightly fade the image */
+}
+
+
+/* Hover Effect: Highlight Project Title */
+.project-card h3 {
+    transition: color 0.3s ease;
+}
+
+.project-card:hover h3 {
+    color: #007bff;
+    /* Change title color on hover */
+}
+
+
+/* Hover Effect: Button Background Change */
+.project-card a.btn {
+    transition: background-color 0.3s ease;
+}
+
+.project-card:hover a.btn {
+    background-color: #0056b3;
+    /* Darken button color */
+}
+
+
+/* Hover Effect: Add Border on Hover */
+.project-card {
+    border: 1px solid transparent;
+    /* Default border */
+}
+
+
+.project-card:hover {
+    border: 1px solid #007bff;
+    /* Add border color on hover */
+}
+
+
+/* Hover Effect: Rotate Icon (if you have icons inside the card) */
+.project-card i {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover i {
+    transform: rotate(360deg);
+    /* Rotate icon on hover */
+}
+
+
+/* Optional: Add more effects such as changing text shadow or other creative transitions */
+.project-card h3:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Add subtle text shadow on title hover */
+}
